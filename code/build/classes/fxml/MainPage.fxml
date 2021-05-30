@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1366.0" style="-fx-background-color: #222;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainPageController">
+   <children>
+      <Pane prefHeight="146.0" prefWidth="1366.0" style="-fx-background-color: aliceblue;" />
+      <Button fx:id="buttonMedico" layoutX="190.0" layoutY="360.0" mnemonicParsing="false" onAction="#clickButtonMedico" style="-fx-background-color: #222;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../images/medico_img_png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonFarmaceutico" layoutX="572.0" layoutY="360.0" mnemonicParsing="false" onAction="#clickButtonFarmaceutico" style="-fx-background-color: #222;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../images/farmaceutico_img_png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonAdmin" layoutX="960.0" layoutY="362.0" mnemonicParsing="false" onAction="#clickButtonAdmin" style="-fx-background-color: #222;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="197.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../images/adm_img_png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="233.0" fitWidth="233.0" layoutX="566.0" layoutY="11.0">
+         <image>
+            <Image url="@../images/emed-logo2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonSair" layoutY="610.0" mnemonicParsing="false" onAction="#clickButtonSair" style="-fx-background-color: #222;">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/sair.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
