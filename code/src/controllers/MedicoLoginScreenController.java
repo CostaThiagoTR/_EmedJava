@@ -1,8 +1,9 @@
 package controllers;
 
-import classes.Medico;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.PasswordField;
@@ -13,7 +14,7 @@ import javafx.scene.control.TextField;
  *
  * @author caios
  */
-public class MedicoLoginScreenController implements Initializable {
+public class MedicoLoginScreenController implements Initializable{
 
     /**
      * Initializes the controller class.
@@ -25,10 +26,11 @@ public class MedicoLoginScreenController implements Initializable {
     private PasswordField passwordField;
     
     //atrs
-    private String id = textField.getText();
-    private String password = passwordField.getText();
+    String id;
+    String password;
+
     
-//    Medico medico = new Medico(id,password);
+  //Medico medico = new Medico(id,password);
   //deixar para o banco  
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -36,9 +38,9 @@ public class MedicoLoginScreenController implements Initializable {
     }
 
     public void buttonEntrar(){
-        System.out.print(id+", "+ password);
-    
-    
+    	id = textField.getText();
+    	password = passwordField.getText();
+    	
     }
     
 }

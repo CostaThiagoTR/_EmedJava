@@ -11,9 +11,12 @@ package classes;
  */
 public class Admin extends Funcionario{
 
+	private String username;
+	private String password;
+	
     //construtor
-    public Admin(String id, String password) {
-        super(id, password);
+    public Admin(String username, String password,String nome, String cpf, String email) {
+        super(nome,cpf,email);
     }
     
     //functions

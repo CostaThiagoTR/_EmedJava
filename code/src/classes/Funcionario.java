@@ -12,38 +12,47 @@ package classes;
 public abstract class Funcionario {
     
     //atributes
-    private String id;
-    private String password;
+    private String nome;
+    private String cpf;
+    private String email;
     
     //constructor
-    public Funcionario(String id, String password){
-        this.id = id;
-        this.password = password;
+    public Funcionario(String nome, String cpf, String email){
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
     }
     
     //functions
-    boolean login(){
+    boolean login(String id, String password){
         boolean result = false;
-        
         return result;
     };
     
     //getters 'n setters
-    public String getId() {
-        return id;
+    public String getNome() {
+        return nome;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getPassword() {
-        return password;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
     
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
     
+   
 }

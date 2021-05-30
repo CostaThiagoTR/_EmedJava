@@ -1,6 +1,6 @@
 package controllers;
 
-import java.net.URL;
+import interfaces.uuidFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,7 +13,7 @@ import javafx.stage.Stage;
  *
  * @author caios
  */
-public class MainPageController{
+public class MainPageController implements uuidFactory{
     
     @FXML
     Button buttonMedico;
@@ -25,11 +25,7 @@ public class MainPageController{
     Button buttonSair;
     
     public void clickButtonMedico() throws Exception{
-//        Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("/fxml/MedicoLoginScreen.fxml"));
-        
-        URL url = getClass().getResource("/fxml/MedicoLoginScreen.fxml");
-        Parent root = FXMLLoader.load(url);
-        
+        Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("/fxml/MedicoLoginScreen.fxml"));
         Stage window = (Stage)this.buttonMedico.getScene().getWindow();
         window.setScene(new Scene(root, 1366, 720));
     }
@@ -39,7 +35,7 @@ public class MainPageController{
     }
     
     public void clickButtonAdmin(){
-        
+
     }
     
     public void clickButtonSair(){
