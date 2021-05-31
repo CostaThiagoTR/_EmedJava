@@ -6,9 +6,9 @@ import classes.Medico;
 public class FarmaceuticoFactory implements FuncionarioFactory{
 
 	@Override
-	public Farmaceutico criarFuncionario(String id, String password,String nome, String cpf, String email) {
+	public Farmaceutico criarFuncionario(String crf, String password,String nome, String cpf, String email) {
 		
-		return new Farmaceutico(id, password, nome, cpf, email);
+		return new Farmaceutico(crf, password, nome, cpf, email);
 	}
 
 }
